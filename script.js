@@ -8,7 +8,7 @@ const getDayName = (dayType, dateVal = dateObj) =>
 
 // This function fetches the data from the api using location input.
 async function fetchWeatherData(location) {
-  const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${encodeURIComponent(location)}`;
+  const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${encodeURIComponent(location)}`;
 
   try {
     const response = await fetch(apiUrl);
