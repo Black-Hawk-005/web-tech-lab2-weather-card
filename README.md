@@ -16,6 +16,9 @@ This is a simple web application that displays current weather information for a
 - **JavaScript:** Handles fetching data from the API and updating the UI dynamically.
 - **WeatherAPI:** Provides the weather data.
 
+## Requirements:
+npm package dotenv
+
 ## How to Use
 
 1.  **Get an API Key:** You'll need to sign up for a free API key from [WeatherAPI](https://www.weatherapi.com/).
