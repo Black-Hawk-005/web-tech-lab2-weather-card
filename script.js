@@ -1,9 +1,12 @@
+// Contains the JavaScript file for the weather app to fetch the current status of the current location/entered location.
+
 const dateObj = new Date();
 
 const getDayName = (dayType, dateVal = dateObj) =>
   dateVal.toLocaleDateString('en-US', { weekday: dayType });
 
 
+// This function fetches the data from the api using location input.
 async function fetchWeatherData(location) {
   const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${encodeURIComponent(location)}`;
 
@@ -27,6 +30,7 @@ async function fetchWeatherData(location) {
   }
 }
 
+// This function fetches the input value, checks for the test cases and feeds to function that fetches the weather api.
 async function fetchWeatherCondition() {
   const locationInput = document.querySelector('.location-input');
   let location = locationInput.value.trim();
@@ -39,6 +43,7 @@ async function fetchWeatherCondition() {
   await fetchWeatherData(location);
 }
 
+// This function update the weather part with the data fetched from API.
 function updateWeatherUI(data) {
   try {
     document.querySelector('.location').textContent = `${data.location.name}`;
@@ -52,12 +57,12 @@ function updateWeatherUI(data) {
   }
 }
 
-// Get current location weather
+// Gets current location and get the weather conditions and updates on loading.
 navigator.geolocation.getCurrentPosition(
   position => {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
-    const location = `${latitude},${longitude}`; // Proper comma-separated format for API
+    const location = `${latitude},${longitude}`;
 
     localStorage.setItem('latitude', latitude);
     localStorage.setItem('longitude', longitude);
