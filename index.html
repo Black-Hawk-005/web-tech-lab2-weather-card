@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Weather API</title>
+</head> 
+<body>
+    
+    <div class="container">
+        
+        <div class="search-box">
+            <input class="location-input" placeholder="Search">
+            <button class="search-btn" onclick="fetchWeatherCondition()">
+                <img class="search-icon" src="img/search.png">
+            </button>
+        </div>
+
+        <div class="weather-display">
+            <img class="weather-icon" src="img/cloudy.png">
+
+            <p class="weather-temp">
+                27°C
+            </p>
+
+            <p class="location">
+                Chennai
+            </p>
+        </div>
+
+        <div class="miscellanueous-text">
+            <div class="humidity">
+                <img class="humidity-icon" src="img/humidity.png">
+                <div class="humidity-content">
+                    <p class="humidity-value">60%</p>
+                    <p class="humidity-placeholder">Humidity</p>
+                </div>
+            </div>
+
+            <div class="wind-speed">
+                <img class="wind-speed-icon" src="img/wind.png">
+                <div class="wind-speed-content">
+                    <p class="wind-speed-value">5.56 km/hr</p>
+                    <p class="wind-speed-placeholder">Wind speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

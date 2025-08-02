@@ -1,0 +1,116 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    background-color: rgb(53, 53, 53);
+}
+
+p {
+    width: fit-content;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 10%;
+    width: 450px;
+    height: 600px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, rgb(0, 255, 234), rgb(119, 0, 255));
+}
+
+.search-box {
+    margin: 10px 10px;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.location-input {
+    border: none;
+    height: 40px;
+    outline: none;
+    width: 200px;
+    font-size: 16px;
+    padding: 0px 20px;
+    border-radius: 40px;
+}
+
+.search-btn {
+    border: none;
+    border-radius: 40px;
+    height: 42px;
+    width: 42px;
+    margin: 0px 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.search-icon {
+    margin: 0;
+    outline: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.weather-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;            
+    
+}
+
+.weather-icon {
+    height: 150px;
+    width: 150px;
+}
+
+.weather-temp {
+    margin: 0;
+    outline: 0;
+    color: white;
+    font-size: 78px;
+    align-self: center;
+    
+}
+
+.location {
+    margin: 0;
+    color: white;
+    font-size: x-large;
+    align-self: center;
+}
+
+.humidity-icon, .wind-speed-icon {
+    height: 35px;
+    width: 35px;
+}
+
+.humidity, .wind-speed {
+    margin: 5px 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.miscellanueous-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.humidity-content, .wind-speed-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 5px;
+}
+
+.humidity-placeholder, .humidity-value, .wind-speed-value, .wind-speed-placeholder {
+    width: fit-content;
+    margin: 0;
+    color: white;
+}
