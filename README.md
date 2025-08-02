@@ -16,26 +16,17 @@ This is a simple web application that displays current weather information for a
 - **JavaScript:** Handles fetching data from the API and updating the UI dynamically.
 - **WeatherAPI:** Provides the weather data.
 
-## Requirements:
-- Install dotenv package using
-```
-npm install dotenv
-```
-
 ## How to Use
 
 1.  **Get an API Key:** You'll need to sign up for a free API key from [WeatherAPI](https://www.weatherapi.com/).
-
-2. **.env file:** Create a .env file with APIKEY as variable and store the API key.
-
-3.  **Update the API Key:** Open the `config.js` file and replace `'YOUR_KEY'` with the API key you received.
+2.  **Update the API Key:** Open the `config.js` file and replace `'YOUR_KEY'` with the API key you received.
     
     ```javascript
     const apiKey = 'YOUR_KEY'; 
     ```
     
-4.  **Open the Application:** Simply open the `index.html` file in your web browser. The app will prompt you for your location to show the weather for your current city.
-5.  **Search for a Location:** To check the weather for a different place, type the city name into the search box and click the search button.
+3.  **Open the Application:** Simply open the `index.html` file in your web browser. The app will prompt you for your location to show the weather for your current city.
+4.  **Search for a Location:** To check the weather for a different place, type the city name into the search box and click the search button.
 
 ## Files
 
