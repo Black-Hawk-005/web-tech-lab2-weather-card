@@ -1,1 +1,3 @@
-const apiKey = '07889e4c6b5a45bca8d80542252907';
+require('dotenv').config();
+
+const apiKey = process.env.APIKEY;
